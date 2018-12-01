@@ -1,0 +1,15 @@
+#PhotoDetails
+{
+  margin: 30px !important;
+}
+
+.photo-title
+{
+  width: 150px;
+  min-height: 150px;
+}
+
+.header-title
+{
+  text-align: center;
+}

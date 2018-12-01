@@ -1,0 +1,18 @@
+
+<div id="PhotoDetails">
+
+  <mat-grid-list cols="8" rowHeight="3:5">
+    <mat-grid-tile-header class="header-title"><h1>Photos</h1></mat-grid-tile-header>
+    <mat-grid-tile *ngFor="let photo of PhotoList">
+      <div>
+        <div>
+          <img src="{{photo.url}}" height="150" width="150" />
+        </div>
+        <div class="photo-title"><a>{{photo.title}}</a></div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+

@@ -1,0 +1,20 @@
+.material-icons
+{
+  font-size : 70px !important;
+}
+
+#AlbumDetails
+{
+  margin : 30px !important;
+}
+
+.album-title
+{
+  width: 150px;
+  min-height: 70px;
+}
+
+.header-title
+{
+  text-align : center;
+}

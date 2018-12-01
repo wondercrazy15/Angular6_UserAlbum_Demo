@@ -1,0 +1,13 @@
+<div id="AlbumDetails">
+  <mat-grid-list cols="9">
+    <mat-grid-tile-header class="header-title"><h1>Albums</h1></mat-grid-tile-header>
+    <mat-grid-tile *ngFor="let album of AlbumList">
+      <div>
+        <div>
+          <mat-icon mat-list-icon>photo_library</mat-icon>
+        </div>
+        <div class="album-title"><a href="/user/albums/photos/{{album.id}}">{{album.title}}</a></div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

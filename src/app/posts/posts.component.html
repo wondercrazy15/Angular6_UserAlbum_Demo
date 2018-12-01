@@ -1,0 +1,28 @@
+
+
+<div id="PostDetails">
+
+  <mat-card class="post-content" *ngFor="let post of PostList">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{post.name}}</mat-card-title>
+      <mat-card-subtitle>{{post.username}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{post.title}}</p>
+      <p>
+        {{post.body}}
+      </p>
+      <mat-list>
+        <mat-list-item *ngFor="let comment of post.comments">
+         
+          <h4 mat-line>{{comment.name}}</h4>
+          <!--<div class="photo-title"><a>{{comment.email}}</a></div>
+          <div class="photo-title"><a>{{comment.body}}</a></div>-->
+        </mat-list-item>
+        <!--<mat-divider></mat-divider>-->        
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>
+
